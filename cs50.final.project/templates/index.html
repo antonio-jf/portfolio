@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div class="container tm-2">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="card my-5" style="width: 100%;">
+                    <a href="/query"><img src="../static/images/code.jpg" class="card-img-top" alt="Code"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Create your query</h5>
+                        <p class="card-text">Curious about the data? Start analyzing with a few clicks.</p>
+                        <a href="/query" class="btn btn-primary">Create Query</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card my-5" style="width: 100%;">
+                    <a href="/data_structure"><img src="../static/images/bycicle.jpg" class="card-img-top" alt="Bycicle"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Database</h5>
+                        <p class="card-text">Get a hold of the database and the variables there in.</p>
+                        <a href="/data_structure" class="btn btn-primary">Explore database</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card my-5" style="width: 100%;">
+                    <a href="/about"><img src="../static/images/about.jpg" class="card-img-top" alt="About"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">About the website</h5>
+                        <p class="card-text">Read about the motivation and the origin of the website as a whole.</p>
+                        <a href="/about" class="btn btn-primary">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

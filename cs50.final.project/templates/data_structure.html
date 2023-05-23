@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <p class="fs-1 tm-2">Understanding the Data</p>
+    <p>The data consists of a series of variables collected by <a href="https://divvybikes.com/" target="_blank">Devvy</a> that track bike usage in the North-East region of the US.
+        Devvy is a company that offers subscription-based bike leases to customers, with there being two different types of bike subscriptions: annual subscriptions for "members" and daily subscriptions for "casual" customers.
+        The bikes can be unlocked from one station and returned to any other station in the system anytime.
+        Bike usage is very important for the brand as it helps understand consumer behavior and adjust marketing and business strategies accordingly.</p>
+
+    <p>The data has been downloaded and pre-loaded into a SQL database. A detailed description of all variables contained in the dataset is presented below.</p>
+    <table class="table caption-top">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Variable</th>
+                <th scope="col">Database variable</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>ID</td>
+                <td>ride_id</td>
+                <td>This variable serves the purpose of uniquelly identifying a single trip in the dataset.</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Rideable Type</td>
+                <td>rideable_type</td>
+                <td>Shows the type of bycicle used in a particular trip.</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Start time</td>
+                <td>started_at</td>
+                <td>Tracks the time at which a trip took place initially.</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>End time</td>
+                <td>ended_at</td>
+                <td>Tracks the time at which a trip finished.</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Start Station</td>
+                <td>start_station_name</td>
+                <td>Name of the station at which the trip started.</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Start Station ID</td>
+                <td>start_station_id</td>
+                <td>Unique ID of the station at which the trip started.</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>End Station</td>
+                <td>end_station_name</td>
+                <td>Name of the station at which the trip ended.</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>End Station ID</td>
+                <td>end_station_id</td>
+                <td>Unique ID of the station at which the trip ended.</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Start Latitude</td>
+                <td>start_lat</td>
+                <td>Initial latitude of the trip, that is, the latitude of the start station.</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Start Longitude</td>
+                <td>start_lng</td>
+                <td>Initial longitude of the trip, that is, the longitude of the start station.</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>End latitude</td>
+                <td>end_lat</td>
+                <td>Final latitude of the trip, that is, the latitude of the end station.</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td>End Longitude</td>
+                <td>end_lng</td>
+                <td>Final longitude of the trip, that is, the longitude of the end station.</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p class="fs-3">How is the data being processed?</p>
+    <ol>
+        <li>Through a series of variable-selection fields you will be prompted to select which variables you want to analyze.</li>
+        <li>Once you select the variables, a SQL query will be run on the database to filter data relevant to the query.</li>
+        <li>Once the data has been selected, a series of processes will be carried out to prepare the data and plot it.</li>
+    </ol>
+    <p class="mb-3">Note that not all variables might be available for you to query over.</p>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <p class="fs-2">What is the main goal of this website?</p>
+    <p>The main objective is to allow you to extract data from the bycicle tripdata database through a series of
+        customizable SQL queries, and obtain beautifully plotted data to obtain useful insights.</p>
+
+    <p class="fs-2 tm-2">How the idea for this project originated?</p>
+    <p class="fs-4">This project has been developed as part of CS50's final project.</p>
+    <p>
+        The main idea for this website came to me as I was working on a data science project.
+        The idea of letting the user pick what variables they wanted to analize and provide them
+        with a visual representation of the data sounded like a useful and helpful solution.
+    </p>
+    <p>
+        The decision to select the data came from the Google Analytics Professional Certificate
+        featured in Coursera, although as mentioned in the <a href="/data_structure">data</a>
+        webpage, the data comes from <a href="https://divvybikes.com/system-data">Devvy</a>, this
+        dataset was featured in one of Google Certificate's courses and the familiarity was
+        definitely a plus and it made it an easy decision.
+    </p>
+
+    <img src="../static/images/graphs_vector.png" class="rounded mx-auto my-3 d-block" alt="Illustrative graphs" style="width: 50%;">
+
+{% endblock %}

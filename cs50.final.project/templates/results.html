@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div class="container" style="margin-left: auto; margin-right: auto;">
+        <p class="fs-4 mt-3">The following is the plot for your query!</p>
+        <img src="{{ url_for('static', filename='images/plot.png') }}" class="img-fluid" alt="{{ name }}">
+        <p class="fs-6 mt-3">If you are interested in the query generated to extract the information you can click the button below!</p>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                Show query
+            </a>
+        </p>
+        <div class="collapse mb-3" id="collapseExample">
+            <div class="card card-body">
+                {{ query }}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
