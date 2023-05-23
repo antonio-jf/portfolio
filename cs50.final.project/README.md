@@ -1,5 +1,4 @@
 # Bycicle data visualization website
-#### Video demo: https://youtu.be/wp2a0k-H9Do
 #### Description:
 ##### Project motivation
 This project is an attempt at using web programming to give the user access to a data base and create data visualizations without needing to input a lot of commands or knowing everything that's happening internally.
