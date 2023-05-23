@@ -13,7 +13,7 @@ The main idea for this website came to me as I was working on a data science pro
 At first I didn't really know what the project was going to be about but after this idea came up in my mind I thought it was a perfect way of connecting two of my main interest areas: web programming and data science.
 
 ##### Project overview
-In this website you have a few webpages available, namely ```about.html``` and ```about.html```, which should be useful to get a hold of the data that one is expected to be able to query over and the origin of the website.
+In this website you have a few webpages available, namely ```about.html``` and ```data_structure.html```, which should be useful to get a hold of the data that one is expected to be able to query over and the origin of the website.
 
 The main page the website has is ```query.html``` where the user is prompt to select a variable to analyze and a descriptive statistic, which we'll plot based on the variable and ultimately present to the user after processing the data.
 
