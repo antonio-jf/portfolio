@@ -25,7 +25,7 @@ Due to the scope of the project, some variables needed some advanced wrangling t
 
 The plots generated automatically have been programmed using ```matplotlib``` with the main goal of demonstrating the distribution of the selected variable and show the top 50 results for said variable, according to the amount of times it appears therein.
 
-The choice to only show the first 50 instead of a bigger number is merely due to the sie of the plot being an important factor, as well as legibility and interpretation of the results.
+The choice to only show the first 50 instead of a bigger number is merely due to the size of the plot being an important factor, as well as legibility and interpretation of the results.
 
 ##### Detailed data processing
 
