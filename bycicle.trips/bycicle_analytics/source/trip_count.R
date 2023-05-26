@@ -15,7 +15,7 @@ data %>%
   geom_bar(stat = 'identity', position = position_dodge(), color = "black") +
   theme_fivethirtyeight() +
   labs(title = "Trip count by user type",
-       subtitle = "From April May 1st 2022 to April 30th 2023, amounts in thousands.",
+       subtitle = "From May 1st 2022 to April 30th 2023, amounts in thousands.",
        caption = "Data from divvybikes.com") + 
   guides(fill=guide_legend("User Type"))
 
