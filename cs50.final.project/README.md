@@ -44,3 +44,10 @@ The user is then presented with the ```results.html``` page which recalls the im
 ##### Final comment
 
 Overall, the experience that one might expect from this website is pretty basic, though it does incorporate a lot of bootstrap to stylize it and the results are quite nice aesthetically in my opinion.
+
+##### Project Screenshots
+![Homepage.](static/home_page.png)
+![About.](static/about_page.png)
+![Description.](static/description_page.png)
+![Query.](static/query_page.png)
+![Results.](static/results_page.png)
