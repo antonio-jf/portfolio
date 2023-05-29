@@ -42,7 +42,10 @@ basemap %>% addPolygons(data = shp,
                    radius = trip_by_start_location$tot/10000, 
                    fillOpacity = 1,
                    opacity = 1,
-                   popup = trip_by_start_location$start_station_name)
+                   popup = trip_by_start_location$start_station_name) %>% 
+  addLegend(pal = custom_palette, 
+            title = "Stations by number of starting trips",
+            values = trip_by_start_location$tot)
 # Viewer is used for visualization
 # Fig saved as html
 
