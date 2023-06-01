@@ -36,7 +36,7 @@ The data used for this project has been downloaded directly from [Divvy's websit
 | `end_lng` | Longitude coordinate from the station at which the trip ended | Coordinates in CRS |
 | `member_casual` | Type of member that took the trip|`casual`,`member`|
 
-The raw data set contains more than 5.8 millions observations for trips from both members and casual users. Some of the basic visualizations contained in the first question do consider the full data set since it gives some useful insights. However, utilizing the full data set for the whole analysis is considered to be not optimal due to the demanding computational power required to process and plot the data; nonetheless, to address any concerns regarding data not being representative, 30,000 random samples have been taken from the data set corresponding to every month for the period considered.
+The raw data set contains more than 5.8 millions observations for trips from both members and casual users. Some of the basic visualizations contained in the first question do consider the full data set since it gives some useful insights. However, utilizing the full data set for the whole analysis is considered to be not optimal due to the demanding computational power required to process and plot the data; to address this and to 'descale' the data, 30,000 samples have been taken from the data set corresponding to every month for the period considered, and to prevent any concerns for the data not being representative, said samples have been taken at random.
 
 ## Question solving
 ### 1. How do annual members and casual riders use Cyclistic bikes differently?
