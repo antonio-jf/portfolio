@@ -88,4 +88,27 @@ ColdDurations %>%
   guides(fill=guide_legend("User Type")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 
+# Clean variables
+rm(list = ls())
+
+# Load sampled data
+load("../static/sampled_tripdata.RData")
+
+# 
+sampled_data %>%
+  select(rideable_type, started_at, ended_at, member_casual) %>% 
+  mutate(duration = as.numeric(ended_at - started_at)/600) %>%
+  mutate(rideable_type = factor(rideable_type)) %>% 
+  mutate(rideable_type = str_replace(rideable_type, "classic_bike", "Classic")) %>%
+  mutate(rideable_type = str_replace(rideable_type, "docked_bike", "Docked")) %>%
+  mutate(rideable_type = str_replace(rideable_type, "electric_bike", "Electric")) %>%
+  ggplot(aes(duration, ..count.., fill=member_casual)) +
+  geom_density(alpha = .5) +
+  scale_x_continuous(trans = "log2", breaks=c(.5)) +
+  facet_grid(.~rideable_type) +
+  guides(fill=guide_legend("User Type")) +
+  ylab("") +
+  xlab("Duration in minutes (log2 transformed)")
+  
+  
 rm(list = ls())
