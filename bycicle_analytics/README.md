@@ -10,7 +10,7 @@ As you can already imagine, gathering usage data from this service is very impor
 
 According to finance analysts at Cyclistic, members are more profitable than casuals so the main goal of this case study is to analyze the way both of this consumer types behave in order to come up with useful insights that may help converting casual into members.
 
-## How the data is being processed?
+## How the data is being processed? :control_knobs:
 The language I'm using for this analysis is mostly `R`, and due to the nature of the language itself I've decided not to use a `SQL` database for querying over data and just do it all in plain `R`. 
 The data used for this project has been downloaded directly from [Divvy's website](https://divvybikes.com/system-data) and hasn't been included in the files corresponding to this project due to storage constraints[^1]. However, any code used to load it, wrangle it, and overall manipulate it will be available in this repo.
 
@@ -19,7 +19,7 @@ The data used for this project has been downloaded directly from [Divvy's websit
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
-# Getting to know the data
+# Getting to know the data :card_file_box:
 ## How is the data structured?
 | Column name | Description | Possible values |
 | -- | -- | -- |
@@ -38,7 +38,7 @@ The data used for this project has been downloaded directly from [Divvy's websit
 
 The raw data set contains more than 5.8 millions observations for trips from both members and casual users. Some of the basic visualizations contained in the first question do consider the full data set since it gives some useful insights. However, utilizing the full data set for the whole analysis is considered to be not optimal due to the demanding computational power required to process and plot the data; to address this and to 'descale' the data, 30,000 samples have been taken from the data set corresponding to every month for the period considered, and to prevent any concerns for the data not being representative, said samples have been taken at random.
 
-## Question solving
+## Question solving :interrobang:
 ### 1. How do annual members and casual riders use Cyclistic bikes differently?
 #### Intuition prior to querying
 Before writing any code, one can notice that the first question being asked requires us to carry out descriptive statistics, which can be accompanied by visualizations to make inferences clearer.
