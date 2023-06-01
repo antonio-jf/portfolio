@@ -1,17 +1,6 @@
 # Welcome to Bycicle analytics! :bike:
 This is a project based on a case study from Google's Data Analytics Professional Certificate. It consists of analyzing monthly data from a company called Cyclistic, based on a real company called *Divvy*.
 
-## Sections to this case study
-1. Introduction
-   - Context
-   - How the data is being processed
-   - Questions to be answered 
-2. Getting to know the data
-   - How is the data structured
-   - Intuition behind querying for insights
-   - Descriptive statistics
-   
-
 # Introduction
 ## Context
 Cyclistic is a business that offers bike-sharing subscriptions to people in Chicago. The bikes can be unlocked from one station and
@@ -47,14 +36,34 @@ The data used for this project has been downloaded directly from [Divvy's websit
 | `end_lng` | Longitude coordinate from the station at which the trip ended | Coordinates in CRS |
 | `member_casual` | Type of member that took the trip|`casual`,`member`|
 
+The raw data set contains more than 5.8 millions observations for trips from both members and casual users. Some of the basic visualizations contained in the first question do consider the full data set since it gives some useful insights. However, utilizing the full data set for the whole analysis is considered to be not optimal due to the demanding computational power required to process and plot the data; nonetheless, to address any concerns regarding data not being representative, 30,000 random samples have been taken from the data set corresponding to every month for the period considered.
+
 ## Question solving
 ### 1. How do annual members and casual riders use Cyclistic bikes differently?
 #### Intuition prior to querying
 Before writing any code, one can notice that the first question being asked requires us to carry out descriptive statistics, which can be accompanied by visualizations to make inferences clearer.
 
 #### Important distinctions
-As the question states, one of the main takeaways one should aim to get from the data is the seggregation of the two types of users.
+As the question states, one of the main takeaways one should aim to get from the data is to understand how bike usage behavior diverts when comparing casual users with members.
 
+A first approach to this is visualizing just how trip counts differ between both types of users. The following graph allows us to see that over the last year, members had more trips every single month than casual users.
+
+![Trip count plot.](figs/plots/trip_count.png)
+
+The gap between trip counts every month seems to be shorter during warm months, *i.e.* spring and winter months, with the spread between trips in July 2022 being as close as around 1%.
+The graph also allows us to see a very clear stationary pattern in the data; the combined trip count shows an increasing trend from january through july and then decreases back down from august onward.
+
+This is consistent with trip duration over the same period, we see from the following two plots how durations change during winter and autumn.
+
+![Trip count plot.](figs/plots/bike_trip_durations_cold.png)
+
+![Trip count plot.](figs/plots/bike_trip_durations_warm.png)
+
+This is obvious considering that bikes are not very popular to use during cold months in contrast with warmer ones. 
+
+The plots also let us see something worth noting: **casual users tend to have longer trips than members** regarless of the time of the year and the biggest outliers come from casual users as well.
+
+A density 
 
 ## Descriptive Statistics
 
