@@ -47,7 +47,14 @@ The data used for this project has been downloaded directly from [Divvy's websit
 | `end_lng` | Longitude coordinate from the station at which the trip ended | Coordinates in CRS |
 | `member_casual` | Type of member that took the trip|`casual`,`member`|
 
-## Intuition behind querying for insights 
+## Question solving
+### 1. How do annual members and casual riders use Cyclistic bikes differently?
+#### Intuition prior to querying
+Before writing any code, one can notice that the first question being asked requires us to carry out descriptive statistics, which can be accompanied by visualizations to make inferences clearer.
+
+#### Important distinctions
+As the question states, one of the main takeaways one should aim to get from the data is the seggregation of the two types of users.
+
 
 ## Descriptive Statistics
 
