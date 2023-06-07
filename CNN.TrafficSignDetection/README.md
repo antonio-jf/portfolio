@@ -6,7 +6,7 @@ The main goal of this project was to create a Convolutional Neural Network that 
 ## Getting to know the dataset
 The dataset I used for this comes from the [German Traffic Sign Recognition Benchmark](https://benchmark.ini.rub.de/?section=gtsrb&subsection=news) and it contains a series of images of different categories of road signs.
 
-The data contains a series of subfolder for each of the 43 categories of traffic signs in the dataset, categories in the dataset varies and has images for stop signs, speed signs, direction signs as well as parking signs, among others.
+The data contains a series of subfolders for each of the 43 categories of traffic signs in the dataset, categories in the dataset varies and has images for stop signs, speed signs, direction signs as well as parking signs, among others.
 
 ## How the Neural Network is constructed
 For this project `scikit-learn`, `tensorflow`, `opencv-python` were needed in order to build the architecture, as well as to process the data before feeding the actual neural network.
