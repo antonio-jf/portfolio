@@ -1,5 +1,5 @@
 # CS50ai
-A subdirectory for my cs50ai code.
+A subdirectory for my [cs50ai](https://cs50.harvard.edu/ai/2020/) code.
 
 ## What is CS50ai?
 CS50ai is an intermediate Harvard online course focused on teaching Artificial Intelligence fundamentals with Python through lectures and a fully fledged seven-week program.
