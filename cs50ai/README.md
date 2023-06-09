@@ -16,8 +16,15 @@ A brief description of what each code does is found below. Feel free to go over 
 - In `knights` the task was to knowledge-engineer a series of logical sentences so as to help an AI to understand how to classify a series of Knights and Knaves.
 - In `minesweeper` an AI has been implemented to play minesweeper on its own, beating the game according to knowledge that is being acquired as it progresses. 
 ### Week 2
-- `heredity` is a program that 
+- `heredity` is a program that takes a document full of people and its genetic characteristics and calculates the probabilities that the structure observed is true, according to a series of conditional probabilities.
+- Continuing with probability, `pagerank` takes a corpus of webpages and calculates the probability that an agent ends in one of the webpages at any given point, according to the amount of links to that page, as well as some other conditions.
 ### Week 3
+- `crossword` is an app that takes a `.txt` representation of a crossword and desciphers, according to a document filled with words, which combination suits the crossword, printing it after conclusion.
 ### Week 4
+- `nim` is also a game-playing AI which is trained heavily to play the famous game *Nim* according to a reinforcement learning algorithm known as `Q-learning`,  which rewards the AI for winning and punishes it for losing.
+- For `shopping` a dataset containing information about website visitors is used in order to train a model and predict, according to a `K-NearestNeighbors` algorithm, which users made a purchase and which ones didn't.
 ### Week 5
+- In `traffic` a convolutional neural network was created and trained with several traffic sign images in order to be able to classify a test dataset of traffic signs according to the category they belong to.
 
+### Week 6
+- Currently being worked on, updates soon to be up.
