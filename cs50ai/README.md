@@ -27,4 +27,5 @@ A brief description of what each code does is found below. Feel free to go over 
 - In `traffic` a convolutional neural network was created and trained with several traffic sign images in order to be able to classify a test dataset of traffic signs according to the category they belong to.
 
 ### Week 6
-- Currently being worked on, updates soon to be up.
+- `parser` is a program that tries to understand the underlying structure behind a bunch of sentences given a set of semantic and syntax rules represented as trees using the [Natural language Toolkit](https://www.nltk.org/_modules/nltk/tree.html), `nltk`, module.
+- Currently working on `questiong`, updates soon to be up.
