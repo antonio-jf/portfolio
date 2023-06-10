@@ -28,4 +28,4 @@ A brief description of what each code does is found below. Feel free to go over 
 
 ### Week 6
 - `parser` is a program that tries to understand the underlying structure behind a bunch of sentences given a set of semantic and syntax rules represented as trees using the [Natural language Toolkit](https://www.nltk.org/_modules/nltk/tree.html), `nltk`, module.
-- Currently working on `questiong`, updates soon to be up.
+- `questions` takes a query from the user and searches over a series of documents contained in a corpus the top n sentences it deems most suitable for answering the query.
