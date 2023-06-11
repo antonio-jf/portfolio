@@ -7,7 +7,7 @@ After every weekly lecture there are program implementations a course-taker is e
 
 ## What can you find in this subdirectory?
 Basically, here you can find my solutions for CS50ai's problems.
-A brief description of what each code does is found below. Feel free to go over the code in each of the subdirectories and take a look at the code.
+A brief description of what each code does is found below. Feel free to move around and browse each of the subdirectories and take a look at the code.
 
 ### Week 0
 - In `degrees` you can find code created for a breadth-first search algorithm which has the main goal of iterating over movies and finding a link between two people by means of the people they have co-starred with. 
