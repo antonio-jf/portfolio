@@ -12,7 +12,7 @@ The model was created mainly using `tensorflow` and its architecture follows a S
 -  The model resizes every input image from the training set, as well as the validation set, to a given size for the sake of consistency.
 -  On every `epoch` that the model goes through new data is pumped in and variation is added in order to increase learning generalization.
 -  After every training `epoch` newly trained weights are tested against the validation set.
--  The loss function used for compiling the neural network was `binary_crossentropy` since there are only two possible results; on the hand, the optimizer used was `adam` and a learning rate of *0.001* was applied throughout the training process, which seemed to produce the best results.
+-  The loss function used for compiling the neural network was `binary_crossentropy` since there are only two possible results; on the other hand, the optimizer used was `adam` and a learning rate of *0.001* was applied throughout the training process, which seemed to produce the best results.
 
 ## Results obtained
 Overall the accuracy during training reached a value of approximately *99%* after around 30 `epochs`, which is not surprising; the main takeaway however being that the current model had a validation accuracy of around *75%*, which is pretty decent for the amount of available training data utilized.
