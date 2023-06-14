@@ -1,7 +1,7 @@
 # Human or Horse?
 ### You can try to test the model running the colab file in this subdirectory!
 
-This is a subdirectory dedicated to a Convolutional Neural Network model created with the main goal of detecting a myriad of filters from human and horse images with different patterns and ultimately classifies a test set according to previously learned image data.
+This is a subdirectory dedicated to a Convolutional Neural Network model created with the main goal of detecting a myriad of filters from human and horse images with different patterns and ultimately classify a test set according to previously learned image data.
 
 The motivation behind the project was to further understand how computer vision works as I was currently learning how to apply machine learning algorithms and models in Arduino microcontrollers with embedded systems.
 
