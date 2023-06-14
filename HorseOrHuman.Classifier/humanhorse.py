@@ -25,9 +25,9 @@ def main():
     )
     
     # Save model to file
-    # filename = "human-horse-classifier.h5"
-    # model.save(filename)
-    # print(f"Model saved to {filename}.")
+    filename = "human-horse-classifier.h5"
+    model.save(filename)
+    print(f"Model saved to {filename}.")
     
 
 def data_load():
@@ -90,24 +90,22 @@ def get_model():
     Returns:
         model: A compiled convolutional model.
     """
-    OPTIMIZER = "adam"
+    OPTIMIZER = tf.keras.optimizers.Adam(lr=0.001)
     
     model = tf.keras.models.Sequential([
         # Use convolution to simplify data and feature extraction
-        tf.keras.layers.Conv2D(16, (3, 3), activation="relu", input_shape = (IMG_WIDTH, IMG_HEIGHT, 3)),
+        tf.keras.layers.Conv2D(64, (3, 3), activation="relu", input_shape = (IMG_WIDTH, IMG_HEIGHT, 3)),
         # Pooling to decrease dimensions and
-        tf.keras.layers.MaxPooling2D((3,3)),
-        tf.keras.layers.Conv2D(32, (3, 3), activation="relu"),
         tf.keras.layers.MaxPooling2D((3, 3)),
-        tf.keras.layers.Conv2D(64, (3, 3), activation="relu"),
-        tf.keras.layers.MaxPooling2D((3, 3)),
+        tf.keras.layers.Conv2D(128, (3, 3), activation="tanh"),
+        tf.keras.layers.MaxPooling2D((2, 2)),
+        tf.keras.layers.Conv2D(128, (3, 3), activation="relu"),
+        tf.keras.layers.MaxPooling2D((2, 2)),
         # Vectorize resulting data
         tf.keras.layers.Flatten(),
-        tf.keras.layers.Dense(512, activation = "relu"),
-        # Using dropouts to avoid model being over reliant on just a few neurons
-        tf.keras.layers.Dropout(.5),
         tf.keras.layers.Dense(256, activation = "relu"),
-        tf.keras.layers.Dropout(.5),
+        # Using dropouts to avoid model being over reliant on just a few neurons
+        tf.keras.layers.Dense(512, activation = "relu"),
         # One output that indicates wether output is 0 for human, 1 for horse
         tf.keras.layers.Dense(1, activation="sigmoid")        
     ])
