@@ -31,5 +31,5 @@ A brief description of what each code does is found below. Feel free to move aro
 - In `traffic` a convolutional neural network was created and trained with several traffic sign images in order to be able to classify a test dataset of traffic signs according to the category they belong to.
 
 ### Week 6
-- `parser` is a program that tries to understand the underlying structure behind a bunch of sentences given a set of semantic and syntax rules represented as trees using the [Natural language Toolkit](https://www.nltk.org/_modules/nltk/tree.html), `nltk`, module.
+- [`parser`](wk6/parser) is a program that tries to understand the underlying structure behind a bunch of sentences given a set of semantic and syntax rules represented as trees using the [Natural language Toolkit](https://www.nltk.org/_modules/nltk/tree.html), `nltk`, module.
 - `questions` takes a query from the user and searches over a series of documents contained in a corpus the top n sentences it deems most suitable for answering the query.
