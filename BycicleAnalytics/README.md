@@ -1,5 +1,6 @@
 # Welcome to Bycicle analytics! :bike:
 This is a project based on a case study from Google's Data Analytics Professional Certificate. It consists of analyzing monthly data from a company called Cyclistic, based on a real company called *Divvy*.
+
 *This is an ongoing project and will receive updates regularly*
 
 # Introduction
