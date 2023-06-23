@@ -53,6 +53,7 @@ WarmDurations %>%
   geom_boxplot(position = "dodge2") +
   # Transform y axis for ease of visualization
   scale_y_continuous(trans="log2") +
+  geom_hline(yintercept = 1, linetype = "dashed") +
   theme_classic() +
   scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
   ylab("Duration in minutes (log2 transformed)") +
@@ -79,6 +80,7 @@ ColdDurations %>%
   ggplot(aes(factor(full_date), duration, fill = member_casual)) +
   geom_boxplot(position = "dodge2") +
   scale_y_continuous(trans="log2") +
+  geom_hline(yintercept = 1, linetype = "dashed") +
   theme_classic() +
   scale_fill_manual(values=c("#AA77FF", "#56B4E9")) +
   ylab("Duration in minutes (log2 transformed)") +
