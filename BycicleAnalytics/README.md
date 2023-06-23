@@ -57,9 +57,9 @@ The graph also allows us to see a very clear stationary pattern in the data; the
 
 This is consistent with trip duration over the same period, we see from the following two plots how durations change during winter and autumn.
 
-![Trip count plot.](figs/plots/bike_trip_durations_cold.png)
-
 ![Trip count plot.](figs/plots/bike_trip_durations_warm.png)
+
+![Trip count plot.](figs/plots/bike_trip_durations_cold.png)
 
 This is obvious considering that bikes are not very popular to use during cold months in contrast with warmer ones. 
 
