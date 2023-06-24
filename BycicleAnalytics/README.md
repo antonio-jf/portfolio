@@ -67,11 +67,11 @@ The gap between trip counts every month seems to be shorter during warm months, 
 
 This is consistent with trip duration over the same period, we see from the following two plots how durations change during winter and autumn. Notice the dashed line across the plot, representing a duration of 1 minute for reference.
 
-![Trip count plot.](figs/plots/bike_trip_durations_cold.png)
-
 ![Trip count plot.](figs/plots/bike_trip_durations_warm.png)
 
-This is obvious considering that bikes are not as popular to use during cold months as they are during warm months.
+![Trip count plot.](figs/plots/bike_trip_durations_cold.png)
+
+This is obvious considering that bikes are not very popular to use during cold months in contrast with warmer ones. 
 
 The plots also let us see something worth noting: **casual users tend to have longer trips than members** regardless of the time of the year and the biggest outliers come from casual users as well.
 
