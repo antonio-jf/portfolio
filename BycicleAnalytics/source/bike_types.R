@@ -23,7 +23,7 @@ data %>%
   ylab("Amount of rides (in thousands)") +
   xlab("Bike type") +
   labs(title = "Amount of rides by bike and user type",
-       subtitle = "From 05/2022 to 04/2023") +
+       subtitle = "From 05/2022 to 04/2023, in thousands") +
   theme_fivethirtyeight() +
   scale_fill_viridis(discrete = TRUE, name = "User type", labels = c("Casual", "Member"))
 
