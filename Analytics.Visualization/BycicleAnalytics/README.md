@@ -27,7 +27,7 @@ The language I'm using for this analysis is mostly `R`, and due to the nature of
 3.  How can Cyclistic use digital media to influence casual riders to become members?
 
 # SECTIONS
-## Getting to know the data :card_file_box:
+## [Getting to know the data :card_file_box:](progression/GettingToKnowTheData)
 ## Question solving :interrobang:
 ### 1. How do annual members and casual riders use Cyclistic bikes differently?
 ### 2. Why would casual riders buy Cyclistic annual memberships?
