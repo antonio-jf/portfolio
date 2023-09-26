@@ -29,6 +29,6 @@ The language I'm using for this analysis is mostly `R`, and due to the nature of
 # Sections
 [Getting to know the data :card_file_box:](progression/GettingToKnowTheData)
 ## Question solving :interrobang:
-[1. How do annual members and casual riders use Cyclistic bikes differently?](progression/AnsweringQuestions/KeyDifferences)
+[1. How do annual members and casual riders use Cyclistic bikes differently?](Analytics.Visualization/BycicleAnalytics/progression/AnsweringQuestions/KeyDifferences)
 ### 2. Why would casual riders buy Cyclistic annual memberships?
 ### 3. How can Cyclistic use digital media to influence casual riders to become members?
