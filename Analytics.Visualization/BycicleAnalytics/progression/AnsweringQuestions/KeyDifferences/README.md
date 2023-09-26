@@ -12,7 +12,7 @@ As the question states, one of the main takeaways one should aim to get from the
 
 A first approach to this is visualizing just how trip counts differ between both types of users. The following graph allows us to see that over the last year, members had more trips every single month than casual users.
 
-![Trip count plot.](figs/plots/trip_count.png)
+![Trip count plot.](../../../figs/plots/trip_count.png)
 
 The gap between trip counts every month seems to be shorter during warm months, *i.e.* spring and winter months, with the spread between trips in July 2022 being as close as around 1%. The graph also allows us to see a very clear stationary pattern in the data; the combined trip count shows an increasing trend from january through july and then decreases back down from august onward.
 
